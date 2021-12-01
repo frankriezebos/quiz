@@ -2,9 +2,11 @@ $(document).ready(function() {
     // get param from url
     var params = new window.URLSearchParams(window.location.search);
     console.log(params.get('answer'));
+    console.log(params.get('question'));
 
     // define if answer is true or false
     var answer = params.get('answer');
+    var questionNumber = params.get('question');
     
     if (answer == 'true') {
         $('.true').addClass('show');
@@ -60,6 +62,8 @@ $(document).ready(function() {
     } else if (answer == 'false') {
         $('.false').addClass('show');
 
+        // show right answer
+        $('.the-right-answer-is[data-question-number="'+questionNumber+'"]').show();
 
 
         if ( typeof(localStorage.getItem("goodAnswers")) === "string" ) {

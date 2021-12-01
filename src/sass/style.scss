@@ -95,6 +95,8 @@ header {
 .title {
     text-align: center;
     padding: 0 15px;
+    position: relative;
+    z-index: 1;
 
     h2 {
         color: white;
@@ -114,7 +116,7 @@ img {
 
 .icon-wrap {
     margin: 0 auto;
-    max-width: 18vh;
+    max-width: 14vh;
     padding: 80px 0 0 0;
 }
 
@@ -141,8 +143,8 @@ audio {
     }
 }
 
-.grabbel-maar {
-    font-size: 28px;
+.grabbel-maar, .the-right-answer-is {
+    font-size: 2.5vh;
 }
 
 #confetti {
@@ -154,4 +156,16 @@ audio {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.the-right-answer-is {
+    display: none;
+}
+
+@media (max-height: 800px) {
+    .the-right-answer-is {
+        background-color: rgb(181 80 83 / 74%);
+        padding: 5px;
+        border-radius: 10px;
+    }
 }
