@@ -1,7 +1,12 @@
 $(document).ready(function() {
-    var answer = true;
+    // get param from url
+    var params = new window.URLSearchParams(window.location.search);
+    console.log(params.get('answer'));
+
+    // define if answer is true or false
+    var answer = params.get('answer');
     
-    if (answer == true) {
+    if (answer == 'true') {
         $('.true').addClass('show');
 
         if ( typeof(localStorage.getItem("goodAnswers")) === "string" ) {
@@ -52,7 +57,7 @@ $(document).ready(function() {
             $('.audio-true.active').trigger('play');
         });
 
-    } else if (answer == false) {
+    } else if (answer == 'false') {
         $('.false').addClass('show');
 
 
