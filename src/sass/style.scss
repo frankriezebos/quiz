@@ -75,7 +75,7 @@ header {
     color: white;
 
     .speaker-wrap {
-        bottom: 140px;
+        bottom: 40vw;
     }
 }
 
@@ -84,17 +84,19 @@ header {
     color: white;
 
     .speaker-wrap {
-        bottom: 170px;
+        bottom: 50vw;
     }
 }
 
 .title {
     text-align: center;
+    padding: 0 15px;
 
     h2 {
         color: white;
         font-size: 50px;
         font-weight: bold;
+        margin-bottom: 0;
     }
 }
 
@@ -108,7 +110,7 @@ img {
 
 .icon-wrap {
     margin: 0 auto;
-    max-width: 150px;
+    max-width: 18vh;
     padding: 80px 0 0 0;
 }
 
@@ -133,4 +135,19 @@ audio {
         max-width: 60px;
         transform: translateY(-10px);
     }
+}
+
+.grabbel-maar {
+    font-size: 28px;
+}
+
+#confetti {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
