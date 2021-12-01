@@ -1,0 +1,136 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    display: none;
+
+    p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.img-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: all 200ms;
+    transition-delay: 600ms;
+    transform-origin: bottom;
+}
+
+.icon-wrap {
+    transform: translateY(-100%);
+    transition: all 200ms;
+    transition-delay: 400ms;
+    transform-origin: top;
+}
+
+.true,
+.false {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 200ms;
+    transform: scale(0);
+    transform-origin: center;
+    transition-delay: 200ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &.show {
+        opacity: 1;
+        transform: scale(1);
+
+        .icon-wrap {
+            transform: translateY(0);
+        }
+
+        .img-wrap {
+            transform: translateY(0);
+        }
+    }
+}
+
+.true {
+    background-color: rgb(22, 189, 97);
+    // color: rgb(34, 34, 34);
+    color: white;
+
+    .speaker-wrap {
+        bottom: 140px;
+    }
+}
+
+.false {
+    background-color: rgb(197, 48, 48);
+    color: white;
+
+    .speaker-wrap {
+        bottom: 170px;
+    }
+}
+
+.title {
+    text-align: center;
+
+    h2 {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: -8px;
+}
+
+.icon-wrap {
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 80px 0 0 0;
+}
+
+audio {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.speaker-wrap {
+    position: absolute;
+    right: 15px;
+    background-image: url('../img/speech-bubble.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 60px;
+        transform: translateY(-10px);
+    }
+}

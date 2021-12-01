@@ -1,0 +1,25 @@
+{
+    "name": "quiz",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "The MindOffice",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.27.5",
+        "cssnano": "^5.0.8",
+        "gulp": "^4.0.2",
+        "gulp-file-include": "^2.3.0",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.0.0",
+        "gulp-terser": "^2.0.1",
+        "sass": "^1.43.2"
+    },
+    "dependencies": {
+        "aos": "^2.3.4",
+        "bootstrap": "^5.1.3"
+    }
+}

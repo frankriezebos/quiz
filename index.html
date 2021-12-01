@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+    <header>
+        <p>Aantal goede antwoorden: <span class="good-answers"></span></p>
+    </header>
+
+    <main>
+        <div class="true result-wrap">
+            <div class="icon-wrap">
+                <img src="img/true-white.png" alt="">
+            </div>
+
+            <div class="title">
+                <h2>Goedzo!</h2>
+            </div>
+
+            <div class="img-wrap">
+                <img src="img/Sinterklaas-duim-omhoog.png" alt="">
+            </div>
+
+            <div class="speaker-wrap">
+                <img src="img/speaker.png" alt="">
+            </div>
+
+            <audio class="true-sound-1 audio audio-true">
+                <source src="media/ongelofelijk-goed.mp3" type="audio/mpeg">
+            </audio> 
+
+            <audio class="true-sound-2 audio audio-true">
+                <source src="media/het-gaat-goed.mp3" type="audio/mpeg">
+            </audio> 
+        </div>
+
+        <div class="false result-wrap">
+            <div class="icon-wrap">
+                <img src="img/wrong-white.png" alt="">
+            </div>
+
+            <div class="title">
+                <h2>Helaas fout!</h2>
+            </div>
+
+            <div class="img-wrap">
+                <img src="img/Sinterklaas-kom-op-nou.png" alt="">
+            </div>
+
+            <div class="speaker-wrap">
+                <img src="img/speaker.png" alt="">
+            </div>
+
+            <audio class="false-sound-1 audio audio-false">
+                <source src="media/gaat-het-goed.mp3" type="audio/mpeg">
+            </audio> 
+
+            <audio class="false-sound-2 audio audio-false">
+                <source src="media/nou-haha.mp3" type="audio/mpeg">
+            </audio> 
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
