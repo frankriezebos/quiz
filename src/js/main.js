@@ -9,6 +9,7 @@ $(document).ready(function() {
     var questionNumber = params.get('question');
 
     console.log('vraag nummer: ', questionNumber);
+    $('.current-question').html(questionNumber);
     
     if (answer == 'true') {
         $('.true').addClass('show');
