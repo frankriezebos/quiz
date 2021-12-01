@@ -160,6 +160,10 @@ audio {
 
 .the-right-answer-is {
     display: none;
+
+    a {
+        color: white;
+    }
 }
 
 @media (max-height: 800px) {

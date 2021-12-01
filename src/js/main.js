@@ -7,6 +7,8 @@ $(document).ready(function() {
     // define if answer is true or false
     var answer = params.get('answer');
     var questionNumber = params.get('question');
+
+    console.log('vraag nummer: ', questionNumber);
     
     if (answer == 'true') {
         $('.true').addClass('show');
