@@ -39,7 +39,7 @@ $(document).ready(function() {
 
         
 
-        $('.speaker-wrap').click(function(){
+        $('.speaker-wrap, .img-wrap').click(function(){
             $('audio').each(function(){
                 this.pause(); // Stop playing
                 this.currentTime = 0; // Reset time
@@ -91,7 +91,7 @@ $(document).ready(function() {
         
 
 
-        $('.speaker-wrap').click(function(){
+        $('.speaker-wrap, .img-wrap').click(function(){
             $('audio').each(function(){
                 this.pause(); // Stop playing
                 this.currentTime = 0; // Reset time

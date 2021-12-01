@@ -9,6 +9,10 @@ body {
 body {
     position: relative;
     font-family: sans-serif;
+    background-image: url('../img/cover-rob.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -70,7 +74,7 @@ header {
 }
 
 .true {
-    background-color: rgb(22, 189, 97);
+    background-color: rgb(22 189 97 / 81%);
     // color: rgb(34, 34, 34);
     color: white;
 
@@ -80,7 +84,7 @@ header {
 }
 
 .false {
-    background-color: rgb(197, 48, 48);
+    background-color: rgb(197 48 48 / 71%);
     color: white;
 
     .speaker-wrap {
