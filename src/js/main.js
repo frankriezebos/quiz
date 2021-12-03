@@ -120,9 +120,13 @@ $(document).ready(function() {
 
 
 
-    if ( goodAnswers === 3 || goodAnswers === 6 || goodAnswers === 9 ) {
+    if ( goodAnswers === 3 || goodAnswers === 9 ) {
         $('.grabbel-maar').html('Je hebt '+goodAnswers+' antwoorden goed. Je mag grabbelen!');
     }
+
+    if ( goodAnswers === 6 ) {
+      $('.grabbel-maar').html('Je hebt '+goodAnswers+' antwoorden goed. Je mag 2x grabbelen!');
+  }
 
     // confetti op laatste goede antwoord
     if ( goodAnswers === 12 ) {
