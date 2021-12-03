@@ -38,7 +38,6 @@ header {
 }
 
 .icon-wrap {
-    transform: scale(0);
     transition: all 200ms;
     transition-delay: 400ms;
     transform-origin: center;
@@ -62,10 +61,6 @@ header {
     &.show {
         opacity: 1;
         transform: scale(1);
-
-        .icon-wrap {
-            transform: scale(1);
-        }
 
         .img-wrap {
             transform: translateY(0);

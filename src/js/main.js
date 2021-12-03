@@ -130,7 +130,7 @@ $(document).ready(function() {
 
     // confetti op laatste goede antwoord
     if ( goodAnswers === 12 ) {
-        $('.grabbel-maar').html('Je hebt alle antwoorden goed. Je mag grabbelen!');
+        $('.grabbel-maar').html('Je hebt alle antwoorden goed. Je mag alles grabbelen wat er nog over is! Er zijn 3 cadeauonderdelen en 2 snoepgoed');
 
         $('#confetti').show();
 
